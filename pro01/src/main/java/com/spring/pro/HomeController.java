@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 	// 수미 수정
 	// 나연 수정
+	// 수미 수정 2
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	/**
