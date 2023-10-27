@@ -20,6 +20,7 @@ public class HomeController {
 	// 나연 수정
 	// 수미 수정 2
 	// 영우 등장
+	// ㅇㅇ ㅈㄷㅈ
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	/**
