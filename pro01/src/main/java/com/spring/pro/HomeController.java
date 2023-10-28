@@ -22,6 +22,7 @@ public class HomeController {
 	// 영우 등장
 	// ㅇㅇ ㅈㄷㅈ
 	// 은주1
+	// 나연 
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	/**

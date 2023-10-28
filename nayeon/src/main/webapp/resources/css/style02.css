@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body, h1 {
+  margin:0;
+}
+
+.container {
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+  background-color:darkcyan; /* 임시 */
+}
+
+.container > .content {
+  display:flex;
+  flex-direction:row;
+  flex-grow:1;
+}
+
+.container > .content > area1 {
+  background-color:#e8f2fe; /* 임시 */
+  flex-basis:300px;
+  flex-shrink:0;
+}
+
+.container > .content > main {
+  background-color:pink; /* 임시 */
+  flex-grow:1;
+  flex-shrink:1;
+}
+
+.container > .content > area2 {
+  background-color:#e8f2fe; /* 임시 */
+  flex-basis:300px;
+  flex-shrink:0; 
+}
