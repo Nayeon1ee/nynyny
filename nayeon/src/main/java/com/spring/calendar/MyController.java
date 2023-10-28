@@ -15,10 +15,28 @@ public class MyController {
 	public String test01() {
 		return "test01";
 	}
+
 	
-	@GetMapping("/test02")
-	public String test02() {
-		return "test02";
+	@GetMapping("/test_common")
+	public String common_test() {
+		return "test_common";
+	}
+	
+	
+	@GetMapping("/test_common2")
+	public String common_test2() {
+		return "test_common2";
+	}
+	
+	@GetMapping("/test_common3")
+	public String common_test3() {
+		return "test_common3";
+	}
+	
+	
+	@GetMapping("/myschedule")
+	public String myschedule() {
+		return "myschedule01";
 	}
 	
 	

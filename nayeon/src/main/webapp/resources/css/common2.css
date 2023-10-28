@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+
+/* 헤더 스타일링 */
+
+.header {
+	width: 1000px;
+	margin: 100px auto;
+	background-color: #333;
+	/* 헤더 배경색 설정 */
+	color: #fff;
+	/* 헤더 텍스트 색상 설정 */
+	padding: 20px;
+	/* 헤더 안쪽 여백 설정 */
+	text-align: center;
+}
+
+.header h1 {
+	font-size: 2rem;
+	margin: 0;
+}
+
+.header nav ul {
+	list-style: none;
+}
+
+.header nav ul li {
+	display: inline;
+	margin-right: 20px;
+}
+
+.header nav a {
+	color: #fff;
+	/* 링크 색상 설정 */
+	text-decoration: none;
+}
+
+body {
+	font-size: 1rem;
+	font-family: 'NanumSquare', sans-serif;
+	color: blue;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* 컨텐츠 스타일링 */
+
+.board_wrap {
+	width: 1000px;
+	margin: 100px auto;
+	position: relative;
+	background-color: #F0F0F0;
+}
+
+.board_title {
+	margin-bottom: 30px;
+	color: #333;
+}
+
+.board_title strong {
+	font-size: 3rem;
+}
+
+.board_title p {
+	margin-top: 5px;
+	font-size: 1.4rem;
+}
+
+
+/* 푸터 스타일링 */
+
+.footer {
+	width: 1000px;
+	margin: 100px auto;
+	background-color: #333;
+	/* 푸터 배경색 설정 */
+	color: #fff;
+	/* 푸터 텍스트 색상 설정 */
+	padding: 10px;
+	/* 푸터 안쪽 여백 설정 */
+	text-align: center;
+	margin-top: 20px;
+	/* 메인과 푸터 간격 조정을 위해 추가 */
+}

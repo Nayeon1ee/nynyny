@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+:root {
+	/** color **/
+	--baseColor: #333;
+	--blueColor: rgb(152, 61, 223);
+	/** size **/
+	--baseContainer: 79.375rem;
+	/*1270px*/
+	/** padding **/
+
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 70%;
+	height: 100%;
+	background: rgb(230, 79, 255);
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* 헤더 백그라운드 부분 */
+
+html {
+	font-size: 17px;
+}
+
+body {
+	font-size: 1rem;
+	font-family: 'NanumSquare', sans-serif;
+	color: var(--baseColor);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: var(--baseColor);
+}
+
+.container {
+	width: var(--baseContainer);
+	margin: 0 auto;
+}
+
+header {
+	position: fixed;
+	width: 80%;
+	top: 0;
+	left: 5%;
+	background: rgb(255 255 255 / 86%);
+
+}
+
+header img {
+	width: 11.875rem;
+	padding: 0.75rem 0;
+}
+
+header div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header h1 {
+	position: absolute;
+	left: -2000px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+header nav ul {
+	display: flex;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	justify-content: flex-start;
+}
+
+header nav ul li {
+	padding: 10 15px;
+	margin-right: 5px;
+	margin-left: 60px;
+	width: 100px;
+
+}
+
+header nav ul li:last-child {
+	margin-right: 0;
+}
+
+header nav ul li a {
+	position: relative;
+	display: inline-block;
+	line-height: 5rem;
+	font-weight: bold;
+	font-size: 1.0625rem;
+}
+
+header nav ul li.active a,
+header nav ul li:hover a {
+	color: var(--blueColor);
+}
+
+header nav ul li a:after {
+	opacity: 0;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: var(--blueColor);
+	left: 0;
+	bottom: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+header nav ul li.active a:after,
+header nav ul li:hover a:after {
+	opacity: 1;
+}
+
+.user-options {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	justify-content: flex-end;
+	/* 우측 정렬을 위한 수정 */
+	width: 100%;
+	/* 전체 너비를 채우도록 수정 */
+	font-size: 14px;
+}
+
+
+footer {
+	position: fixed;
+	/* 푸터를 화면 하단으로 고정시킴 */
+	bottom: 0;
+	left: 15%;
+	right: 0;
+	/* 좌우 정렬 */
+	width: 70%;
+	height: 180px;
+	padding: 0 8px;
+	display: flex;
+	flex-direction: column;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+.notice_box {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid rgb(152, 61, 223);
+}
+
+.notice_box a {
+	font-weight: bold;
+	color: black;
+}
+
+.aside_box {
+	flex: 1;
+	/* 기본값으로 설정 */
+	display: flex;
+	align-items: flex-end;
+	border-bottom: 1px rgb(152, 61, 223);
+}
+
+.area_user {
+	flex: 4;
+	line-height: 2em;
+}
+
+.area_user_row {
+	display: flex;
+}
+
+.area_user_row span {
+	flex: 1;
+}
+
+.area_user_row ul {
+	flex: 6;
+}
+
+.aur_title {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.area_user_row ul>li {
+	display: inline-block;
+	margin-left: 8px;
+}
+
+.area_col {
+	flex: 1;
+	display: flex;
+}
+
+.area_col .ac_content {
+	line-height: 20px;
+}
+
+.area_col .ac_img {
+	width: 60px;
+	height: 60px;
+}
+
+.bottom_box {
+	flex: 3;
+	padding-top: 20px;
+	font-size: 14px;
+}
+
+.bottom_box ul>li {
+	display: inline-block;
+	margin-left: 8px;
+}
+
+.bottom_box ul>li:last-child {
+	font-weight: bold;
+}
+
+.color_naver {
+	color: rgb(152, 61, 223);
+}
+
+.text_bold-13 {
+	font-weight: bold;
+	font-size: 13px;
+}
