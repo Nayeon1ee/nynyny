@@ -23,6 +23,7 @@ public class HomeController {
 	// ㅇㅇ ㅈㄷㅈ
 	// 은주1
 	// 나연 
+	// 하민
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	/**
