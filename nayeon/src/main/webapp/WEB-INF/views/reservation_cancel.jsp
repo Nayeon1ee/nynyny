@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style_reservation_cancel.css" type="text/css">
 <!-- bootstrap -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/bootstrap/bootstrap_Nayeon.css">
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.js"></script>
 <body>
 

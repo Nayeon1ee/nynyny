@@ -2,6 +2,7 @@ package com.spring.calendar;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class MyController {
@@ -104,4 +105,6 @@ public class MyController {
 	public String reservation_personal() {
 		return "reservation_personal";
 	}
+	
+
 }
