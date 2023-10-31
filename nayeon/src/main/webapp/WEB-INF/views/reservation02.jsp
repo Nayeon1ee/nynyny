@@ -40,6 +40,7 @@
 	});
 </script>
 </head>
+
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/resources/css/style_calendar.css"
 	type="text/css">
@@ -54,7 +55,8 @@
 			<main>
 				<strong>strong제목</strong>
 				<h1>h1 제목</h1>
-				<p>설명</p><hr>
+				<p>설명</p>
+				<hr>
 				<div class='cal'>
 
 					<div id='calendar'></div>
@@ -76,6 +78,7 @@
 								<li>09:00 ~ 09:50</li>
 								<li>캐포머(C) : 다이어트, 체력강화</li>
 								<li>홍길동 강사 | 정원 5명</li>
+								
 							</ul>
 							<ul>
 								<li>09:00 ~ 09:50</li>
@@ -94,6 +97,10 @@
 						<div class="tab_content" id="second_content">컨텐츠 내용2</div>
 
 					</div>
+
+
+
+									
 			</main>
 			<area2>
 			<p>area2</p>

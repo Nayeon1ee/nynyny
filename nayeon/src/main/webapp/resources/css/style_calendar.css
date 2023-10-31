@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+.highlight_r {
+	font-weight: bold;
+	color: red;
+}
+
+.highlight_p {
+	font-weight: bold;
+	color: #8a0ff8;
+}
+
+
 ul, li {
 	list-style: none;
 }
