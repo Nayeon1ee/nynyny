@@ -24,7 +24,7 @@
 			<p>area1</p>
 			</area1>
 
-			<main> 		여기에 작업
+			<main> 
 			
 		<div id="myPage">
         <h3>마이페이지</h3>
@@ -64,28 +64,39 @@
         <div class="icon-grid">
             <div class="icon-row">
                 <div class="icon-item">
-                  <!-- 아이콘 이미지나 아이콘 텍스트 넣기 -->
+                <a href="memberNotice.jsp">
+          		<!-- 아이콘 이미지나 아이콘 텍스트 넣기 -->
                   <p> 공지사항 </p>
+                </a>  
                 </div>
                 <div class="icon-item">
+                <a href="paymentHistory.jsp">
                   <!-- 아이콘 이미지나 아이콘 텍스트 넣기 -->
                   <p> 결제내역 </p>
+                </a>  
                 </div>
                 <div class="icon-item">
+                <a href="#">
                   <!-- 아이콘 이미지나 아이콘 텍스트 넣기 -->
                   <p> 연동센터관리 </p>
+                </a>
                 </div>
             </div>
             <div class="icon-row">
                 <div class="icon-item">
+                 <a href="FAQpage.jsp">
                   <!-- 아이콘 이미지나 아이콘 텍스트 넣기 -->
                   <p> FAQ </p>
+                  </a>
                 </div>
                 <div class="icon-item">
+                <a href="inquiry.jsp">
                   <!-- 아이콘 이미지나 아이콘 텍스트 넣기 -->
                   <p> 문의사항 </p>
+                </a>
                 </div>
                 <div class="icon-item">
+                <a href="#">
                   <!-- 아이콘 이미지나 아이콘 텍스트 넣기 -->
                   <p> 약관 및 정책 </p>
                 </div>

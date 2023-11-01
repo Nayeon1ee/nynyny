@@ -23,7 +23,6 @@
         <div id="userInfo">
             <div id="myInfoLink">내 정보 관리</div>
             <div id="userInfoText">*** 회원님</div>
-            <div id="logout">로그아웃</div>
         </div>
 			
     <div class="payment-history">

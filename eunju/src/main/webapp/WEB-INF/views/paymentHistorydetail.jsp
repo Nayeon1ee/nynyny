@@ -17,14 +17,13 @@
 			<p>area1</p>
 			</area1>
 
-			<main> 		여기에 작업
+			<main> 
 			
 		<div id="myPage">
         <h3><a href="memberPage.jsp">마이페이지</a> > 결제내역 > 결제내역상세</h3>
         <div id="userInfo">
             <div id="myInfoLink">내 정보 관리</div>
             <div id="userInfoText">*** 회원님</div>
-            <div id="logout">로그아웃</div>
         </div>
         
         <div class="payment-detail">
