@@ -4,15 +4,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  
-  
-  
-  
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/memberPageStyle.css">
 <meta charset="UTF-8">
 <title>마이페이지</title>
@@ -31,15 +27,14 @@
 			<main> 		여기에 작업
 			
 		<div id="myPage">
-        <h2>마이페이지</h2>
+        <h3>마이페이지</h3>
         <div id="userInfo">
             <div id="myInfoLink">내 정보 관리</div>
             <div id="userInfoText">*** 회원님</div>
-            <div id="logout">로그아웃</div>
         </div>
 
 <section class="my-passes container mt-5">
-    <h2 class="text-center">나의 수강권 현황</h2>
+    <h3 class="text-center">나의 수강권 현황</h3>
     <div class="pass-box row">
         <div class="individual-pass col">
             <div class="pass-content">

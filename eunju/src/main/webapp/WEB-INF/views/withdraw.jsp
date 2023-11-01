@@ -21,7 +21,7 @@
 			</area1>
 
 			<main> 
-<div id="myPage">
+	<div id="myPage">
   <h3><a href="memberPage.jsp">마이페이지</a> > 회원탈퇴</h3>
         <div id="userInfo">
             <div id="myInfoLink">내 정보 관리</div>
