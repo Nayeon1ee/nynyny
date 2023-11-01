@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+<
+style>body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header 및 Footer 스타일 */
+/* 나중에 따로 설정 */
+#myPage {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 24px;
+}
+
+#userInfo {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#logout {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#myInfoLink {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#content {
+	margin-top: 20px;
+}
+
+#myPage {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 24px;
+}
+
+#userInfo {
+	display: flex;
+	justify-content: space-between; /* flex 요소 사이의 간격을 조절 */
+	align-items: center; /* 세로 가운데 정렬을 위해 추가 */
+}
+
+#myInfoLink {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#userInfoText {
+	flex: 1; /* 공간을 차지하는 비율을 동일하게 설정하여 두 요소를 왼쪽과 오른쪽에 배치 */
+	text-align: right; /* 텍스트를 오른쪽 정렬로 변경 */
+}
+
+#logout {
+	text-decoration: underline;
+	cursor: pointer;
+	margin-left: 10px; /* logout과 userInfoText 사이의 간격을 조절 */
+}
+
+#container001 {
+	max-width: 1200px; /* 예쁘게 감싸는 컨테이너의 최대 너비 설정 */
+	margin: 0 auto; /* 가운데 정렬 */
+	padding: 20px; /* 내용과 컨테이너 사이의 간격 조절 */
+}
+
+#membershipInfo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#commonInfo {
+	padding: 10px;
+}
+
+#individualMembership {
+	padding: 10px;
+	margin: 0 100px;
+}
+
+#groupMembership {
+	padding: 10px;
+}
+
+#iconArea {
+	display: flex;
+	justify-content: space-around;
+}
+
+.iconItem {
+	display: flex;
+	flex-direction: column; /* 세로로 나열 */
+	align-items: center; /* 가운데 정렬 */
+	margin: 0 10px; /* 아이콘 아이템 사이의 간격 조절 */
+}
+
+.icon {
+	/* 아이콘에 대한 스타일 지정 */
+	
+}
+
+.text {
+	/* 텍스트에 대한 스타일 지정 */
+	
+}
+</
+style
+>
