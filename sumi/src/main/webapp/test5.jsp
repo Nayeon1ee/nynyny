@@ -6,10 +6,10 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <!-- css, js연결 -->
-<link href="/qqq/resources/bootstrap/css/templateC.css" rel="stylesheet">
-<link rel="stylesheet" href="/qqq/resources/bootstrap/css/bootstrap_Nayeon.css">
-<link rel="stylesheet" href="/qqq/resources/bootstrap/css/ticket.css">
-<script type="text/javascript" src="/qqq/resources/bootstrap/js/bootstrap.js"></script>
+<link href="/web/resources/bootstrap/css/templateC.css" rel="stylesheet">
+<link rel="stylesheet" href="/web/resources/bootstrap/css/bootstrap_Nayeon.css">
+<link rel="stylesheet" href="/web/resources/bootstrap/css/ticket.css">
+<script type="text/javascript" src="/web/resources/bootstrap/js/bootstrap.js"></script>
 </head>
 <body>
 	<div class="container000">
@@ -21,7 +21,7 @@
 				<!-- 왼쪽 영역 비율7 -->
 				<div class='ticket'>
 					<div class="slect-wrap">
-					<img src="/qqq/resources/img/select-arr.png" alt="arr Image">
+					<img src="/web/resources/img/select-arr.png" alt="arr Image">
 						<select>
 							<option>룩스 필라테스삼송점</option>
 							<option>이브 필라테스 종로점</option>
@@ -134,7 +134,7 @@
 					<!-- 기본으로 보여줄 이미지 -->
 					<div class="content1-img" id="content1-disappear" >
 					<div>
-					<img src="/qqq/resources/img/hand.png" alt="hand Image">
+					<img src="/resources/img/hand.png" alt="hand Image">
 					<p>관심가는 수강권을 클릭해보세요!</p>
 					</div>
 					</div>
@@ -146,10 +146,10 @@
 						<div class="card-header-title">척추가 부서지는 필라테스</div>
 						<div class="card-body-detail">
 							<ul>
-								<li><img src="/qqq/resources/img/purple_bar.png" alt="bar Image">&nbsp;수업 유형 : 6:1 그룹레슨</li>
-								<li><img src="/qqq/resources/img/purple_bar.png" alt="bar Image">&nbsp;수업 횟수 : 24회</li>
-								<li><img src="/qqq/resources/img/purple_bar.png" alt="bar Image">&nbsp;사용 기간 : 2023.10.10~2024.01.01</li>
-								<li><img src="/qqq/resources/img/purple_bar.png" alt="bar Image">&nbsp;금액 : 533,000원</li>
+								<li><img src="/web/resources/img/purple_bar.png" alt="bar Image">&nbsp;수업 유형 : 6:1 그룹레슨</li>
+								<li><img src="/web/resources/img/purple_bar.png" alt="bar Image">&nbsp;수업 횟수 : 24회</li>
+								<li><img src="/web/resources/img/purple_bar.png" alt="bar Image">&nbsp;사용 기간 : 2023.10.10~2024.01.01</li>
+								<li><img src="/web/resources/img/purple_bar.png" alt="bar Image">&nbsp;금액 : 533,000원</li>
 							</ul>
 						</div>
 						<div class="card-footer text-muted">이용정책</div>
