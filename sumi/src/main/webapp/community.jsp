@@ -430,12 +430,6 @@
 
     <div class="pagetitle">
       <h1>커뮤니티 관리</h1>
-      <!-- 
-             	 
-             	 이 영역에 가져온 컴포넌트 넣기 
-             	 NiceAdmin의 demo 보면서 마우스 우클릭하여 소스 보기 해서 가져올 컴포넌트 위치 잘 설정하여 넣기  
-             	 
-             	 -->
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item">필요 시 작성</li><!-- 기존에는 현재 위치 표시였음 Depth1>Depth2>Depth3 표시 -->

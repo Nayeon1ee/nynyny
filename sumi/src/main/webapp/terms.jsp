@@ -32,9 +32,6 @@
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/admin/assets/css/style.css">
 
-  <!-- 부트 스트랩 css파일 -->
-  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/bootstrap/css/bootstrap_Nayeon.css">
-  
   <!-- 내가 만든 css -->
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/admin_common.css">
   
@@ -430,12 +427,6 @@
 
     <div class="pagetitle">
       <h1>커뮤니티 관리</h1>
-      <!-- 
-             	 
-             	 이 영역에 가져온 컴포넌트 넣기 
-             	 NiceAdmin의 demo 보면서 마우스 우클릭하여 소스 보기 해서 가져올 컴포넌트 위치 잘 설정하여 넣기  
-             	 
-             	 -->
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item">필요 시 작성</li><!-- 기존에는 현재 위치 표시였음 Depth1>Depth2>Depth3 표시 -->
@@ -461,15 +452,20 @@
   <option value="2">글내용</option>
   <option value="3">작성자</option>
 </select>
-</div>
+
 	<!-- 검색어 입력창 -->
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="검색어를 입력해주세요." aria-label="Search">
         <button class="btn btn-outline-success" type="submit">search</button>
       </form>
+      </div>
       <a href="#" class="search-filter-reset" id="resetFilters">초기화</a>
 <!-- 날짜 검색창 -->
 <div class="search-date">
+<select class="form-select" aria-label="Default select example" id="filterSelect">
+  <option value="1" selected >작성일</option>
+  <option value="2">최근 수정일</option>
+</select>
     <div class="date-input">
         <input type="date" id="startDate">
     </div>
@@ -480,6 +476,8 @@
 </div>
 </nav>
 <!-- 검색창 끝 -->
+<button type="button" class="btn btn-primary">약관등록</button>
+<button type="button" class="btn btn-success">엑셀다운</button>
 <!-- 게시판 시작 -->
     <h5 class="card-title"></h5>
               <!-- Table with stripped rows -->
@@ -487,54 +485,47 @@
                 <thead>
                   <tr>
                     <th scope="col">번호</th>
-                    <th scope="col">글제목</th>
-                    <th scope="col">글내용</th>
-                    <th scope="col">작성자</th>
+                    <th scope="col">약관명</th>
                     <th scope="col">작성일</th>
+                    <th scope="col">최근 수정일</th>
+                    <th scope="col">필수여부</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">6</th>
-                    <td><a href="${pageContext.request.contextPath }/community_detail.jsp" class="admin-alink-color">xx점 후기</a></td>
-                    <td>토미강사 추천 어쩌구 저쩌구 어쩌구 저쩌구</td>
-                    <td>김xx</td>
-                    <td>2016-05-25</td>
-                  </tr>
-                  <tr>
                     <th scope="row">5</th>
-                    <td><a href="#" class="admin-alink-color">ss점 후기</a></td>
-                    <td>ss강사 비추 가지마셈</td>
-                    <td>이ss</td>
-                    <td>2014-12-05</td>
+                    <td><a href="${pageContext.request.contextPath }/.jsp" class="admin-alink-color">서비스 이용약관</a></td>
+                    <td>2023-12-25</td>
+                    <td>2023-12-25</td>
+                    <td>필수</td>
                   </tr>
                   <tr>
                     <th scope="row">4</th>
-                    <td><a href="#" class="admin-alink-color">한달만에 10kg뺀 썰 푼다</a></td>
-                    <td>인스타 공구 어쩌구 저쩌구 효소가 어쩌구</td>
-                    <td>신00</td>
-                    <td>2011-08-12</td>
+                    <td><a href="#" class="admin-alink-color">개인정보 수집 및 이용방침</a></td>
+                    <td>2022-04-01</td>
+                    <td>2022-10-20</td>
+                    <td>필수</td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
-                    <td><a href="#" class="admin-alink-color">너모 힘들다</a></td>
-                    <td>집가고 싶다아아아아아아아아아아</td>
-                    <td>구99</td>
-                    <td>2012-06-11</td>
+                    <td><a href="#" class="admin-alink-color">마케팅 수신동의</a></td>
+                    <td>2022-03-19</td>
+                    <td>2022-03-19</td>
+                    <td>선택</td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
-                    <td><a href="#" class="admin-alink-color">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</a></td>
-                    <td>ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ</td>
-                    <td>강22</td>
-                    <td>2011-04-19</td>
+                    <td><a href="#" class="admin-alink-color">몰루</a></td>
+                    <td>2021-12-24</td>
+                    <td>2021-12-24</td>
+                    <td>선택</td>
                   </tr>
                   <tr>
                     <th scope="row">1</th>
-                    <td><a href="#" class="admin-alink-color">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</a></td>
-                    <td>ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ</td>
-                    <td>강33</td>
-                    <td>2011-04-19</td>
+                    <td><a href="#" class="admin-alink-color">어쩌구</a></td>
+                    <td>2020-03-12</td>
+                    <td>2020-03-12</td>
+                    <td>선택</td>
                   </tr>
                 </tbody>
               </table>          	
