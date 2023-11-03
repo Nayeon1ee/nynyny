@@ -426,7 +426,7 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>FAQ관리</h1>
+      <h1>FAQ 관리</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item">필요 시 작성</li><!-- 기존에는 현재 위치 표시였음 Depth1>Depth2>Depth3 표시 -->

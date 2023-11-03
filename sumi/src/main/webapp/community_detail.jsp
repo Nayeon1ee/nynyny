@@ -468,7 +468,7 @@
                 </div>
                 <div class="text-center">
                	  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#basicModal">삭제</button>
-                  <button type="button" class="btn btn-secondary" onclick="goBack()">목록</button>
+                  <button type="button" class="btn btn-secondary" onclick="goBack()">취소</button>
                 </div>
               </form><!-- End Multi Columns Form -->
 

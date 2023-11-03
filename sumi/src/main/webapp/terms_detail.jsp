@@ -34,7 +34,6 @@
 
 <!-- 내가 만든 css -->
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/admin_common.css">
-  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/terms.css">
   
   <!-- =======================================================
   * Template Name: NiceAdmin
@@ -451,11 +450,15 @@
                   <label class="form-label">약관 번호</label>
                   <input type="text" readonly disabled class="form-control" value="1">
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-2">
+                  <label class="form-label">필수 여부</label>
+                  <input type="text" readonly disabled class="form-control" value="필수">
+                </div>
+                <div class="col-md-4">
                   <label class="form-label">등록일자</label>
                   <input type="text" readonly disabled class="form-control" value="2023-01-01">
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-4">
                   <label class="form-label">최근 수정일</label>
                   <input type="text" readonly disabled class="form-control" value="2023-01-01" >
                 </div>
@@ -471,26 +474,10 @@
 회원가입 시점에 네이버가 이용자로부터 수집하는 개인정보는 아래와 같습니다.
             </textarea>
                 </div>
-                 <fieldset class="row mb-3">
-                  <div class="col-sm-10">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                      <label class="form-check-label" for="gridRadios1">
-                        필수
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                      <label class="form-check-label" for="gridRadios2">
-                        선택
-                      </label>
-                    </div>
-                  </div>
-                </fieldset>
                 <div class="text-center">
-                  <button type="submit" class="btn btn-primary" onclick="location.href='${pageContext.request.contextPath }/terms_edit.jsp'">수정</button>
+                  <button type="button" class="btn btn-primary" onclick="location.href='${pageContext.request.contextPath }/terms_edit.jsp'">수정</button>
                   <button type="button" class="btn btn-danger" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#basicModal">삭제</button>
-                  <button type="reset" class="btn btn-secondary" onclick="goBack()">취소</button>
+                  <button type="button" class="btn btn-secondary" onclick="goBack()">취소</button>
                 </div>
               </form><!-- End Multi Columns Form -->
 

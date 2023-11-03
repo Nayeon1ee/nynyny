@@ -464,16 +464,16 @@
                 </div>
                <div class="col-md-12">
                   <label class="form-label">글 제목</label>
-                  <input type="text" class="form-control" value="xx점 토미 강사 추천" >
+                  <input type="text" readonly disabled class="form-control" value="xx점 토미 강사 추천" >
                 </div>
                 <div class="col-md-12">
                 	<label class="form-label">글 내용</label>
-                	 <textarea class="form-control" style="height: 300px;">xx점 토미강사 추천 굳굳</textarea>
+                	 <textarea class="form-control" readonly disabled style="height: 300px;">xx점 토미강사 추천 굳굳</textarea>
                 </div>
                 <div class="text-center">
-                  <button type="submit" class="btn btn-primary">수정</button>
+                  <button type="button" class="btn btn-primary" onclick="location.href='${pageContext.request.contextPath }/FAQ_edit.jsp'">수정</button>
                   <button type="button" class="btn btn-danger" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#basicModal">삭제</button>
-                  <button type="reset" class="btn btn-secondary">취소</button>
+                  <button type="button" class="btn btn-secondary" onclick="goBack()">취소</button>
                 </div>
               </form><!-- End Multi Columns Form -->
 
@@ -536,6 +536,9 @@
   <!-- Template Main JS File -->
   <script src="${pageContext.request.contextPath }/resources/admin/assets/js/main.js"></script>
 
+<!-- 내가 만든 JS File -->
+  <script src="${pageContext.request.contextPath }/resources/js/admin_common.js"></script>
+  
 </body>
 
 </html>

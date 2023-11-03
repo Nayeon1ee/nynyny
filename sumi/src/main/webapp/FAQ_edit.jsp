@@ -32,7 +32,7 @@
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/admin/assets/css/style.css">
 
- <!-- 내가 만든 css -->
+<!-- 내가 만든 css -->
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/admin_common.css">
   
   <!-- =======================================================
@@ -426,7 +426,7 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>이용약관 등록</h1>
+      <h1>FAQ 수정</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item">필요 시 작성</li><!-- 기존에는 현재 위치 표시였음 Depth1>Depth2>Depth3 표시 -->
@@ -444,42 +444,37 @@
               <p>간략한 설명</p>
 
 
-              <!-- Multi Columns Form -->
+             	       <!-- Multi Columns Form -->
               <form class="row g-3">
+              <div class="col-md-2">
+                  <label class="form-label">글번호</label>
+                  <input type="text" readonly disabled class="form-control" value="1">
+                </div>
+                <div class="col-md-2">
+                  <label class="form-label">구분</label>
+                  <input type="text" readonly disabled class="form-control" value="김xx">
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label">작성일</label>
+                  <input type="text" readonly disabled class="form-control" value="2022-12-25">
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label">최근 수정일</label>
+                  <input type="text" readonly disabled class="form-control" value="2023-01-01" >
+                </div>
                <div class="col-md-12">
-                  <label class="form-label">약관명</label>
-                  <input type="text" class="form-control" placeholder="약관명을 입력하세요.">
+                  <label class="form-label">글 제목</label>
+                  <input type="text" class="form-control" value="xx점 토미 강사 추천" >
                 </div>
                 <div class="col-md-12">
-                	<label class="form-label">약관 상세</label>
-                	 <textarea class="form-control" placeholder="약관 상세내용을 입력하세요." style="height: 300px;"></textarea>
+                	<label class="form-label">글 내용</label>
+                	 <textarea class="form-control" style="height: 300px;">xx점 토미강사 추천 굳굳</textarea>
                 </div>
-              
-                     <fieldset class="row mb-3">
-                  <div class="col-sm-10">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                      <label class="form-check-label" for="gridRadios1">
-                        필수
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                      <label class="form-check-label" for="gridRadios2">
-                        선택
-                      </label>
-                    </div>
-                  </div>
-                </fieldset>
-                    
-             
                 <div class="text-center">
-                  <button type="submit" class="btn btn-primary">등록</button>
+                  <button type="submit" class="btn btn-primary">수정</button>
                   <button type="reset" class="btn btn-secondary">취소</button>
                 </div>
-              </form>
-              <!-- End Multi Columns Form -->
-
+              </form><!-- End Multi Columns Form -->
 
             </div>
           </div>
@@ -487,9 +482,26 @@
         </div>
       </div>
     </section>
-
+<!-- 삭제 모달 -->
+<div class="modal fade" id="basicModal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">정말 삭제하시겠습니까?</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      확인 버튼을 누르시면 다시 복구시킬 수 없습니다.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                      <button type="button" class="btn btn-primary">확인</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
   </main><!-- End #main -->
-
+ 
  
  
     

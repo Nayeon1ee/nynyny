@@ -32,8 +32,12 @@
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/admin/assets/css/style.css">
 
- <!-- 내가 만든 css -->
+  <!-- 부트 스트랩 css파일 -->
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/bootstrap/css/bootstrap_Nayeon.css">
+  
+  <!-- 내가 만든 css -->
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/admin_common.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/baned_comment.css">
   
   <!-- =======================================================
   * Template Name: NiceAdmin
@@ -426,7 +430,7 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>이용약관 등록</h1>
+      <h1>신고글 관리</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item">필요 시 작성</li><!-- 기존에는 현재 위치 표시였음 Depth1>Depth2>Depth3 표시 -->
@@ -442,45 +446,122 @@
             <div class="card-body">
               <h5 class="card-title">중제목 작성</h5>
               <p>간략한 설명</p>
+     <!-- 검색창 -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- 검색창 셀렉트 박스 -->
+<div>
+<select class="form-select" aria-label="Default select example" id="filterSelect">
+  <option selected>전체</option>
+  <option value="1">글제목</option>
+  <option value="2">글내용</option>
+  <option value="3">작성자</option>
+</select>
+</div>
+	<!-- 검색어 입력창 -->
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="검색어를 입력해주세요." aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">search</button>
+      </form>
+      <a href="#" class="search-filter-reset" id="resetFilters">초기화</a>
+<!-- 날짜 검색창 -->
+<div class="search-date">
+    <div class="date-input">
+        <input type="date" id="startDate">
+    </div>
+    <span class="date-divider">~</span>
+    <div class="date-input">
+        <input type="date" id="endDate">
+    </div>
+</div>
+</nav>
+<!-- 검색창 끝 -->
+<!-- 게시판 시작 -->
+    <h5 class="card-title"></h5>
+              <!-- Table with stripped rows -->
+              <table class="table datatable">
+                <thead>
+                  <tr>
+                    <th scope="col">번호</th>
+                    <th scope="col">글제목</th>
+                    <th scope="col">작성자</th>
+                    <th scope="col">작성일</th>
+                    <th scope="col">신고건수</th>
+                    <th scope="col">처리상태</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td><a href="${pageContext.request.contextPath }/baned_comment_detail.jsp" class="admin-alink-color">xx점 후기</a></td>
+                    <td>홍길동</td>
+                    <td>2016-05-25</td>
+                    <td><span class="tooltip-baned-reason">3건
+                    	<span class="tooltip-baned-text"><p>신고사유</p>- 성희롱적 발언<br>- 스팸/홍보/도배글<br>- 개인정보 노출 게시물
+                    	</span></span>
+                    </td>
+                    <td>처리대기</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td><a href="#" class="admin-alink-color">코인 어쩌구</a></td>
+                    <td>신00</td>
+                    <td>2011-08-12</td>
+                    <td><span class="tooltip-baned-reason">2건
+                    	<span class="tooltip-baned-text"><p>신고사유</p>- 성희롱적 발언<br>- 개인정보 노출 게시물
+                    	</span></span>
+                    </td>
+                    <td>처리완료</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td><a href="#" class="admin-alink-color">너모 힘들다</a></td>
+                    <td>신00</td>
+                    <td>2011-08-12</td>
+                    <td><span class="tooltip-baned-reason">1건
+                    	<span class="tooltip-baned-text"><p>신고사유</p>- 성희롱적 발언<br>
+                    	</span></span>
+                    </td>
+                    <td>처리완료</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td><a href="#" class="admin-alink-color">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</a></td>
+                   <td>신00</td>
+                    <td>2011-08-12</td>
+                    <td><span class="tooltip-baned-reason">3건
+                    	<span class="tooltip-baned-text"><p>신고사유</p>- 성희롱적 발언<br>- 스팸/홍보/도배글<br>- 개인정보 노출 게시물
+                    	</span></span>
+                    </td>
+                    <td>처리완료</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><a href="#" class="admin-alink-color">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</a></td>
+                   <td>신00</td>
+                    <td>2011-08-12</td>
+                    <td><span class="tooltip-baned-reason">1건
+                    	<span class="tooltip-baned-text"><p>신고사유</p>- 스팸/홍보/도배글
+                    	</span></span>
+                    </td>
+                    <td>처리완료</td>
+                  </tr>
+                </tbody>
+              </table>          	
 
-
-              <!-- Multi Columns Form -->
-              <form class="row g-3">
-               <div class="col-md-12">
-                  <label class="form-label">약관명</label>
-                  <input type="text" class="form-control" placeholder="약관명을 입력하세요.">
-                </div>
-                <div class="col-md-12">
-                	<label class="form-label">약관 상세</label>
-                	 <textarea class="form-control" placeholder="약관 상세내용을 입력하세요." style="height: 300px;"></textarea>
-                </div>
-              
-                     <fieldset class="row mb-3">
-                  <div class="col-sm-10">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                      <label class="form-check-label" for="gridRadios1">
-                        필수
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                      <label class="form-check-label" for="gridRadios2">
-                        선택
-                      </label>
-                    </div>
-                  </div>
-                </fieldset>
-                    
-             
-                <div class="text-center">
-                  <button type="submit" class="btn btn-primary">등록</button>
-                  <button type="reset" class="btn btn-secondary">취소</button>
-                </div>
-              </form>
-              <!-- End Multi Columns Form -->
-
-
+	 <!-- 페이징 처리 시작 -->
+              <div class="admin-screen-paging">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">이전</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#">다음</a></li>
+                </ul>
+             </div>
+      <!-- 페이징 처리 끝 -->
+	
             </div>
           </div>
 
@@ -489,7 +570,7 @@
     </section>
 
   </main><!-- End #main -->
-
+ 
  
  
     
@@ -523,6 +604,52 @@
   <!-- Template Main JS File -->
   <script src="${pageContext.request.contextPath }/resources/admin/assets/js/main.js"></script>
 
+<!-- 검색창=>날짜 검색시 시작일보다 빠른 종료일을 선택 못하게 막는 js -->
+<script>
+//입력 필드 가져오기
+const startDateInput = document.getElementById('startDate');
+const endDateInput = document.getElementById('endDate');
+
+// 이벤트 리스너 추가
+startDateInput.addEventListener('input', () => {
+    restrictEndDate();
+});
+
+endDateInput.addEventListener('input', () => {
+    restrictEndDate();
+});
+
+function restrictEndDate() {
+    const startDate = new Date(startDateInput.value);
+    const endDate = new Date(endDateInput.value);
+
+    if (startDate > endDate) {
+        alert('시작 날짜는 종료 날짜보다 빨라야 합니다.');
+        // 현재 입력을 지우거나 기존 유효한 날짜를 복원할 수 있도록 처리
+        startDateInput.value = '';
+        endDateInput.value = '';
+    }
+}
+</script>
+
+<!-- 초기화 글자 클릭시 모든 검색필터 초기화 시키는 js -->
+<script>
+//초기화 링크를 클릭할 때 필터 초기화
+const resetFiltersLink = document.getElementById('resetFilters');
+resetFiltersLink.addEventListener('click', (e) => {
+    e.preventDefault(); // 기본 동작 (링크 이동) 방지
+    
+    // 필터 셀렉트 박스 초기화
+    document.getElementById('filterSelect').selectedIndex = 0;
+    
+    // 시작 날짜와 종료 날짜 초기화
+    document.getElementById('startDate').value = '';
+    document.getElementById('endDate').value = '';
+    
+    // 검색어 입력창 초기화
+    document.querySelector('input[type="search"]').value = '';
+});
+</script>
 </body>
 
 </html>

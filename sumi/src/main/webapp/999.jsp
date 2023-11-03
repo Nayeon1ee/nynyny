@@ -446,21 +446,27 @@
 <!-- 검색필터 시작 -->
              <div class="search-filter">
       <div class="search-filter-inner" >
-              <div class="col-md-4">
+    
+     <div class="serch-filter-content">
+      <div class="search-top">
+              <div class="col-md-3">
                   <label for="inputState" class="form-label">State</label>
                   <select id="inputState" class="form-select">
                     <option selected>Choose...</option>
                     <option>...</option>
                   </select>
                 </div>
-           <div class="search-input">
+           <div class="serch-input">
              <div class="col-md-6">
-                  <label for="inputCity" class="form-label">City</label>
                   <input type="text" class="form-control" id="inputCity">
                 </div>
+                <div class="search-btn">
                 <button type="button" class="btn btn-primary">Primary</button>
                 <button type="button" class="btn btn-primary">Primary</button>
+           </div>
             </div>
+            </div>
+             
              <div class="search-date">
              <div class="col-md-3">
                   <label for="inputState" class="form-label">State</label>
@@ -470,13 +476,15 @@
                   </select>
                 </div>
                 <div class="date-filter">
-                <div class="col-sm-10">
+                <div class="col-sm-12">
                     <input type="date" class="form-control-date">
                   <span>~</span>
                     <input type="date" class="form-control-date">
                   </div>
                   </div>
                   </div>
+                  
+                </div>
              </div>
              </div>
 <!-- 검색필터 끝 -->

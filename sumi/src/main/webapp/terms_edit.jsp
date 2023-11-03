@@ -32,7 +32,7 @@
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/admin/assets/css/style.css">
 
- <!-- 내가 만든 css -->
+<!-- 내가 만든 css -->
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/admin_common.css">
   
   <!-- =======================================================
@@ -426,7 +426,7 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>이용약관 등록</h1>
+      <h1>이용약관 수정</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item">필요 시 작성</li><!-- 기존에는 현재 위치 표시였음 Depth1>Depth2>Depth3 표시 -->
@@ -444,18 +444,33 @@
               <p>간략한 설명</p>
 
 
-              <!-- Multi Columns Form -->
+             	       <!-- Multi Columns Form -->
               <form class="row g-3">
+              <div class="col-md-2">
+                  <label class="form-label">약관 번호</label>
+                  <input type="text" readonly disabled class="form-control" value="1">
+                </div>
+                <div class="col-md-5">
+                  <label class="form-label">등록일자</label>
+                  <input type="text" readonly disabled class="form-control" value="2023-01-01">
+                </div>
+                <div class="col-md-5">
+                  <label class="form-label">최근 수정일</label>
+                  <input type="text" readonly disabled class="form-control" value="2023-01-01" >
+                </div>
                <div class="col-md-12">
                   <label class="form-label">약관명</label>
-                  <input type="text" class="form-control" placeholder="약관명을 입력하세요.">
+                  <input type="text"  class="form-control" value="개인정보 수집 및 이용" >
                 </div>
                 <div class="col-md-12">
                 	<label class="form-label">약관 상세</label>
-                	 <textarea class="form-control" placeholder="약관 상세내용을 입력하세요." style="height: 300px;"></textarea>
+                	 <textarea class="form-control" style="height: 300px;">개인정보보호법에 따라 네이버에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간, 동의 거부권 및 동의 거부 시 불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
+1. 수집하는 개인정보
+이용자는 회원가입을 하지 않아도 정보 검색, 뉴스 보기 등 대부분의 네이버 서비스를 회원과 동일하게 이용할 수 있습니다. 이용자가 메일, 캘린더, 카페, 블로그 등과 같이 개인화 혹은 회원제 서비스를 이용하기 위해 회원가입을 할 경우, 네이버는 서비스 이용을 위해 필요한 최소한의 개인정보를 수집합니다.
+회원가입 시점에 네이버가 이용자로부터 수집하는 개인정보는 아래와 같습니다.
+            </textarea>
                 </div>
-              
-                     <fieldset class="row mb-3">
+                 <fieldset class="row mb-3">
                   <div class="col-sm-10">
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
@@ -471,15 +486,11 @@
                     </div>
                   </div>
                 </fieldset>
-                    
-             
                 <div class="text-center">
-                  <button type="submit" class="btn btn-primary">등록</button>
+                  <button type="submit" class="btn btn-primary" onclick="location.href='${pageContext.request.contextPath }/terms_edit.jsp'">수정</button>
                   <button type="reset" class="btn btn-secondary">취소</button>
                 </div>
-              </form>
-              <!-- End Multi Columns Form -->
-
+              </form><!-- End Multi Columns Form -->
 
             </div>
           </div>
@@ -487,9 +498,26 @@
         </div>
       </div>
     </section>
-
+<!-- 삭제 모달 -->
+<div class="modal fade" id="basicModal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">정말 삭제하시겠습니까?</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      확인 버튼을 누르시면 다시 복구시킬 수 없습니다.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                      <button type="button" class="btn btn-primary">확인</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
   </main><!-- End #main -->
-
+ 
  
  
     
@@ -523,6 +551,9 @@
   <!-- Template Main JS File -->
   <script src="${pageContext.request.contextPath }/resources/admin/assets/js/main.js"></script>
 
+  <!-- 내가 만든 JS File -->
+  <script src="${pageContext.request.contextPath }/resources/js/admin_common.js"></script>
+  
 </body>
 
 </html>
