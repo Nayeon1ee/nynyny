@@ -32,7 +32,7 @@
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/admin/assets/css/style.css">
 
-  <!-- 내가 만든 css -->
+<!-- 내가 만든 css -->
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/admin_common.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/terms.css">
   
@@ -427,7 +427,7 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>이용약관 관리</h1>
+      <h1>이용약관 상세</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item">필요 시 작성</li><!-- 기존에는 현재 위치 표시였음 Depth1>Depth2>Depth3 표시 -->
@@ -443,121 +443,81 @@
             <div class="card-body">
               <h5 class="card-title">중제목 작성</h5>
               <p>간략한 설명</p>
-     <!-- 검색창 -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-<!-- 검색창 셀렉트 박스 -->
-<div>
-<select class="form-select" aria-label="Default select example" id="filterSelect">
-  <option selected>전체</option>
-  <option value="1">글제목</option>
-  <option value="2">글내용</option>
-  <option value="3">작성자</option>
-</select>
 
-	<!-- 검색어 입력창 -->
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="검색어를 입력해주세요." aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">search</button>
-      </form>
-      </div>
-      <a href="#" class="search-filter-reset" id="resetFilters">초기화</a>
-<!-- 날짜 검색창 -->
-<div class="search-date">
-<select class="form-select" aria-label="Default select example" id="filterSelect">
-  <option value="1" selected >작성일</option>
-  <option value="2">최근 수정일</option>
-</select>
-    <div class="date-input">
-        <input type="date" id="startDate">
-    </div>
-    <span class="date-divider">~</span>
-    <div class="date-input">
-        <input type="date" id="endDate">
-    </div>
-</div>	
-</nav>
-<!-- 검색창 끝 -->
-<div class="terms-btn">
-<span class="terms-reg-btn">
-<button type="button" class="btn btn-primary" onclick="location.href='${pageContext.request.contextPath }/terms_register.jsp'">약관등록</button>
-</span>
-<span class="excel-down-btn">
-<button type="button" class="btn btn-success">엑셀다운</button>
-</span>
-</div>
-<!-- 게시판 시작 -->
-    <h5 class="card-title"></h5>
-              <!-- Table with stripped rows -->
-              <table class="table datatable">
-                <thead>
-                  <tr>
-                    <th scope="col">번호</th>
-                    <th scope="col">약관명</th>
-                    <th scope="col">작성일</th>
-                    <th scope="col">최근 수정일</th>
-                    <th scope="col">필수여부</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td><a href="${pageContext.request.contextPath }/terms_detail.jsp" class="admin-alink-color">서비스 이용약관</a></td>
-                    <td>2023-12-25</td>
-                    <td>2023-12-25</td>
-                    <td>필수</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td><a href="#" class="admin-alink-color">개인정보 수집 및 이용방침</a></td>
-                    <td>2022-04-01</td>
-                    <td>2022-10-20</td>
-                    <td>필수</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td><a href="#" class="admin-alink-color">마케팅 수신동의</a></td>
-                    <td>2022-03-19</td>
-                    <td>2022-03-19</td>
-                    <td>선택</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td><a href="#" class="admin-alink-color">몰루</a></td>
-                    <td>2021-12-24</td>
-                    <td>2021-12-24</td>
-                    <td>선택</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td><a href="#" class="admin-alink-color">어쩌구</a></td>
-                    <td>2020-03-12</td>
-                    <td>2020-03-12</td>
-                    <td>선택</td>
-                  </tr>
-                </tbody>
-              </table>          	
 
-	 <!-- 페이징 처리 시작 -->
-              <div class="admin-screen-paging">
-                <ul class="pagination">
-                  <li class="page-item"><a class="page-link" href="#">이전</a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                  <li class="page-item"><a class="page-link" href="#">다음</a></li>
-                </ul>
-             </div>
-      <!-- 페이징 처리 끝 -->
-	
+             	       <!-- Multi Columns Form -->
+              <form class="row g-3">
+              <div class="col-md-2">
+                  <label class="form-label">약관 번호</label>
+                  <input type="text" readonly disabled class="form-control" value="1">
+                </div>
+                <div class="col-md-5">
+                  <label class="form-label">등록일자</label>
+                  <input type="text" readonly disabled class="form-control" value="2023-01-01">
+                </div>
+                <div class="col-md-5">
+                  <label class="form-label">최근 수정일</label>
+                  <input type="text" readonly disabled class="form-control" value="2023-01-01" >
+                </div>
+               <div class="col-md-12">
+                  <label class="form-label">약관명</label>
+                  <input type="text" readonly disabled class="form-control" value="개인정보 수집 및 이용" >
+                </div>
+                <div class="col-md-12">
+                	<label class="form-label">약관 상세</label>
+                	 <textarea class="form-control" readonly disabled  style="height: 300px;">개인정보보호법에 따라 네이버에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간, 동의 거부권 및 동의 거부 시 불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
+1. 수집하는 개인정보
+이용자는 회원가입을 하지 않아도 정보 검색, 뉴스 보기 등 대부분의 네이버 서비스를 회원과 동일하게 이용할 수 있습니다. 이용자가 메일, 캘린더, 카페, 블로그 등과 같이 개인화 혹은 회원제 서비스를 이용하기 위해 회원가입을 할 경우, 네이버는 서비스 이용을 위해 필요한 최소한의 개인정보를 수집합니다.
+회원가입 시점에 네이버가 이용자로부터 수집하는 개인정보는 아래와 같습니다.
+            </textarea>
+                </div>
+                 <fieldset class="row mb-3">
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        필수
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        선택
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary" onclick="location.href='${pageContext.request.contextPath }/terms_edit.jsp'">수정</button>
+                  <button type="button" class="btn btn-danger" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#basicModal">삭제</button>
+                  <button type="reset" class="btn btn-secondary" onclick="goBack()">취소</button>
+                </div>
+              </form><!-- End Multi Columns Form -->
+
             </div>
           </div>
 
         </div>
       </div>
     </section>
-
+<!-- 삭제 모달 -->
+<div class="modal fade" id="basicModal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">정말 삭제하시겠습니까?</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      확인 버튼을 누르시면 다시 복구시킬 수 없습니다.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                      <button type="button" class="btn btn-primary">확인</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
   </main><!-- End #main -->
  
  
@@ -593,52 +553,9 @@
   <!-- Template Main JS File -->
   <script src="${pageContext.request.contextPath }/resources/admin/assets/js/main.js"></script>
 
-<!-- 검색창=>날짜 검색시 시작일보다 빠른 종료일을 선택 못하게 막는 js -->
-<script>
-//입력 필드 가져오기
-const startDateInput = document.getElementById('startDate');
-const endDateInput = document.getElementById('endDate');
-
-// 이벤트 리스너 추가
-startDateInput.addEventListener('input', () => {
-    restrictEndDate();
-});
-
-endDateInput.addEventListener('input', () => {
-    restrictEndDate();
-});
-
-function restrictEndDate() {
-    const startDate = new Date(startDateInput.value);
-    const endDate = new Date(endDateInput.value);
-
-    if (startDate > endDate) {
-        alert('시작 날짜는 종료 날짜보다 빨라야 합니다.');
-        // 현재 입력을 지우거나 기존 유효한 날짜를 복원할 수 있도록 처리
-        startDateInput.value = '';
-        endDateInput.value = '';
-    }
-}
-</script>
-
-<!-- 초기화 글자 클릭시 모든 검색필터 초기화 시키는 js -->
-<script>
-//초기화 링크를 클릭할 때 필터 초기화
-const resetFiltersLink = document.getElementById('resetFilters');
-resetFiltersLink.addEventListener('click', (e) => {
-    e.preventDefault(); // 기본 동작 (링크 이동) 방지
-    
-    // 필터 셀렉트 박스 초기화
-    document.getElementById('filterSelect').selectedIndex = 0;
-    
-    // 시작 날짜와 종료 날짜 초기화
-    document.getElementById('startDate').value = '';
-    document.getElementById('endDate').value = '';
-    
-    // 검색어 입력창 초기화
-    document.querySelector('input[type="search"]').value = '';
-});
-</script>
+  <!-- 내가 만든 JS File -->
+  <script src="${pageContext.request.contextPath }/resources/js/admin_common.js"></script>
+  
 </body>
 
 </html>
