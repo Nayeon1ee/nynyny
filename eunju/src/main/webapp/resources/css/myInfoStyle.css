@@ -86,3 +86,21 @@ a.withdraw_button{
 	cursor: pointer;
 	margin-left: 10px;
 }
+
+
+.my-passes {
+    border: 1px solid #ddd; 
+    padding: 20px; 
+    border-radius:15px;
+  padding: 20px;
+}
+
+
+.my-passes {
+    text-align: center;
+    margin-top: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+
+}
+

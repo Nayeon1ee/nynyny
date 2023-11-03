@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 .container000 {
 	display: flex;
 	flex-direction: column;
@@ -31,11 +30,17 @@
 	flex-shrink: 0;
 }
 
+.total-faq-count {
+  font-size: 14px;
+  color: #888;
+  text-align: left;
+  padding-left: 10px; /* 왼쪽 패딩을 추가합니다. */
+}
+
 #myPage {
 	margin: 0 auto;
 	padding: 20px;
 }
-
 #myPage a {
     color: black; 
     text-decoration: none;
@@ -63,7 +68,7 @@
 	cursor: pointer;
 	margin-left: 10px;
 }
-
+/* my-styles.css */
 
 .my-passes {
     border: 1px solid #ddd; 
@@ -81,57 +86,33 @@
 
 }
 
-
-
-
-.payment-detail {
-    border: 1px solid #ddd;
-    max-width: 600px;
-    margin: 60px auto 0;
-    padding: 20px;
-    background-color: transparent;
-    border-radius: 30px; 
+.section000{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px; 
 }
 
-.payment-status {
-    font-weight: bold;
-    float: right;
+
+.btn-group {
+  display: flex;
+  justify-content: center;
 }
 
-.payment-details {
-    margin-top: 10px;
+
+.btn-check + .btn-outline-primary {
+  font-size: 20px; 
+  padding: 1rem 2rem;
+  width: 200px; 
+  margin: 0.25rem; 
 }
 
-.payment-description {
-    margin: 5px 0;
+.btn.btn-outline-success {
+  white-space: nowrap; 
+  width: auto; 
+  padding: 0.5rem 1rem; 
 }
 
-.payment-date {
-    color: #555;
-    float: right;
-}
-
-.payment-amount {
-    font-weight: bold;
-    color: #333;
-    margin-top: 10px;
-}
-
-.line {
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 15px 0;
-}
-
-.order-info, .payment-info {
-    margin: 20px;
-}
-
-.order-title, .payment-title {
-    font-weight: bold;
-}
-
-.order-value, .payment-value {
-    float: right;
-    border: none;
+.section002 {
+  margin-top:50px;
+  margin-top:50px;
 }

@@ -23,7 +23,6 @@
         <div id="userInfo">
             <div id="myInfoLink">내 정보 수정</div>
             <div id="userInfoText">*** 회원님</div>
-            <div id="logout">로그아웃</div>
         </div>
       <section class="info-box">
     <div class="info-box04">

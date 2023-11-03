@@ -22,7 +22,6 @@
         <div id="userInfo">
             <div id="myInfoLink">내 정보 수정</div>
             <div id="userInfoText">*** 회원님</div>
-            <div id="logout">로그아웃</div>
         </div>
 <div class="inquiry-form">
     <h2>문의사항</h2>

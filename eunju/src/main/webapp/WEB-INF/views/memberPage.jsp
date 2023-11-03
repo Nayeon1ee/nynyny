@@ -4,15 +4,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  
-  
-  
-  
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/memberPageStyle.css">
 <meta charset="UTF-8">
 <title>마이페이지</title>
@@ -28,18 +24,17 @@
 			<p>area1</p>
 			</area1>
 
-			<main> 		여기에 작업
+			<main> 
 			
 		<div id="myPage">
-        <h2>마이페이지</h2>
+        <h3>마이페이지</h3>
         <div id="userInfo">
             <div id="myInfoLink">내 정보 관리</div>
             <div id="userInfoText">*** 회원님</div>
-            <div id="logout">로그아웃</div>
         </div>
 
 <section class="my-passes container mt-5">
-    <h2 class="text-center">나의 수강권 현황</h2>
+    <h3 class="text-center">나의 수강권 현황</h3>
     <div class="pass-box row">
         <div class="individual-pass col">
             <div class="pass-content">
@@ -69,28 +64,39 @@
         <div class="icon-grid">
             <div class="icon-row">
                 <div class="icon-item">
-                  <!-- 아이콘 이미지나 아이콘 텍스트 넣기 -->
+                <a href="memberNotice.jsp">
+          		<!-- 아이콘 이미지나 아이콘 텍스트 넣기 -->
                   <p> 공지사항 </p>
+                </a>  
                 </div>
                 <div class="icon-item">
+                <a href="paymentHistory.jsp">
                   <!-- 아이콘 이미지나 아이콘 텍스트 넣기 -->
                   <p> 결제내역 </p>
+                </a>  
                 </div>
                 <div class="icon-item">
+                <a href="#">
                   <!-- 아이콘 이미지나 아이콘 텍스트 넣기 -->
                   <p> 연동센터관리 </p>
+                </a>
                 </div>
             </div>
             <div class="icon-row">
                 <div class="icon-item">
+                 <a href="FAQpage.jsp">
                   <!-- 아이콘 이미지나 아이콘 텍스트 넣기 -->
                   <p> FAQ </p>
+                  </a>
                 </div>
                 <div class="icon-item">
+                <a href="inquiry.jsp">
                   <!-- 아이콘 이미지나 아이콘 텍스트 넣기 -->
                   <p> 문의사항 </p>
+                </a>
                 </div>
                 <div class="icon-item">
+                <a href="#">
                   <!-- 아이콘 이미지나 아이콘 텍스트 넣기 -->
                   <p> 약관 및 정책 </p>
                 </div>

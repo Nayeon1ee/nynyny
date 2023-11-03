@@ -28,7 +28,6 @@
         <div id="userInfo">
             <div id="myInfoLink">내 정보 수정</div>
             <div id="userInfoText">*** 회원님</div>
-            <div id="logout">로그아웃</div>
         </div>
         
         <div class="inquiry">
@@ -42,86 +41,82 @@
             <hr>
 
 <div class="accordion" id="accordionExample">
-<div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#inquiryCollapse" aria-expanded="true" aria-controls="inquiryCollapse">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading1">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#inquiryCollapse1" aria-expanded="true" aria-controls="inquiryCollapse1">
         <div class="inquiry-item">
-            <div class="inquiry-details">
-                <div class="inquiry-title">제목</div>
-                <div class="inquiry-date">2023.10.17 오후 4:34</div>
-            </div>
-            <div class="inquiry-location">
-                <p>검토중</p>
-            </div>
-
+          <div class="inquiry-details">
+            <div class="inquiry-title">제목</div>
+            <div class="inquiry-date">2023.10.17 오후 4:34</div>
+          </div>
+          <div class="inquiry-location">
+            <p>검토중</p>
+          </div>
         </div>
       </button>
     </h2>
-    <div id="inquiryCollapse" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+    <div id="inquiryCollapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionExample">
       <div class="accordion-body">
         <strong>문의내역</strong> <br> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the, though the transition does limit overflow.
       </div>
       <hr>
- <div class="accordion-body">
+      <div class="accordion-body">
         <strong>답변내역</strong> <br> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the, though the transition does limit overflow.
-      </div>     
+      </div>
     </div>
-</div>
-<div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#inquiryCollapse" aria-expanded="true" aria-controls="inquiryCollapse">
-        <div class="inquiry-item">
-            <div class="inquiry-details">
-                <div class="inquiry-title">제목</div>
-                <div class="inquiry-date">2023.10.17 오후 4:34</div>
-            </div>
-            <div class="inquiry-location">
-                <p>검토중</p>
-            </div>
+  </div>
 
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading2">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#inquiryCollapse2" aria-expanded="true" aria-controls="inquiryCollapse2">
+        <div class="inquiry-item">
+          <div class="inquiry-details">
+            <div class="inquiry-title">제목</div>
+            <div class="inquiry-date">2023.10.17 오후 4:34</div>
+          </div>
+          <div class="inquiry-location">
+            <p>검토중</p>
+          </div>
         </div>
       </button>
     </h2>
-    <div id="inquiryCollapse" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+    <div id="inquiryCollapse2" class="accordion-collapse collapse show" aria-labelledby="heading2" data-bs-parent="#accordionExample">
       <div class="accordion-body">
         <strong>문의내역</strong> <br> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the, though the transition does limit overflow.
       </div>
       <hr>
- <div class="accordion-body">
+      <div class="accordion-body">
         <strong>답변내역</strong> <br> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the, though the transition does limit overflow.
-      </div>     
+      </div>
     </div>
-</div>
-<div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#inquiryCollapse" aria-expanded="true" aria-controls="inquiryCollapse">
-        <div class="inquiry-item">
-            <div class="inquiry-details">
-                <div class="inquiry-title">제목</div>
-                <div class="inquiry-date">2023.10.17 오후 4:34</div>
-            </div>
-            <div class="inquiry-location">
-                <p>검토중</p>
-            </div>
+  </div>
 
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading3">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#inquiryCollapse3" aria-expanded="true" aria-controls="inquiryCollapse3">
+        <div class="inquiry-item">
+          <div class="inquiry-details">
+            <div class="inquiry-title">제목</div>
+            <div class="inquiry-date">2023.10.17 오후 4:34</div>
+          </div>
+          <div class="inquiry-location">
+            <p>검토중</p>
+          </div>
         </div>
       </button>
     </h2>
-    <div id="inquiryCollapse" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+    <div id="inquiryCollapse3" class="accordion-collapse collapse show" aria-labelledby="heading3" data-bs-parent="#accordionExample">
       <div class="accordion-body">
         <strong>문의내역</strong> <br> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the, though the transition does limit overflow.
       </div>
       <hr>
- <div class="accordion-body">
+      <div class="accordion-body">
         <strong>답변내역</strong> <br> 
         It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the, though the transition does limit overflow.
-      </div>     
+      </div>
     </div>
-</div>
-
-</div>
-
-          
+  </div>
+</div>  
 
            
         </div>
