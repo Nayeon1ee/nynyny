@@ -4,5 +4,6 @@
 .terms-btn {
     display: flex;
     justify-content: space-between;
+  	margin: 2em 0; 
   }
   

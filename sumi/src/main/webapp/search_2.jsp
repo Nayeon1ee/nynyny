@@ -31,9 +31,8 @@
 
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/admin/assets/css/style.css">
-  
-  <!-- 내가 만든 css -->
-  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/admin_common.css">
+
+<!-- DIY css파일 -->
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/search_2.css">
   
   <!-- =======================================================
@@ -427,10 +426,10 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>커뮤니티 관리</h1>
+      <h1>대제목 작성</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"></li><!-- 기존에는 현재 위치 표시였음 Depth1>Depth2>Depth3 표시 -->
+          <li class="breadcrumb-item">필요 시 작성</li><!-- 기존에는 현재 위치 표시였음 Depth1>Depth2>Depth3 표시 -->
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -441,9 +440,10 @@
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title"></h5>
-              <p></p>
-  <!-- 검색필터 시작 -->
+              <h5 class="card-title">중제목 작성</h5>
+              <p>간략한 설명</p>
+
+<!-- 검색필터 시작 -->
              <div class="search-filter">
       <div class="search-filter-inner" >
     
@@ -464,7 +464,7 @@
                 </div>
                 <div class="search-btn">
                 <button type="submit" class="btn btn-primary search">검색</button>
-                <button type="reset" class="btn btn-primary search" id="resetButton">초기화</button>
+                <button type="reset" class="btn btn-primary search">초기화</button>
            </div>
             </div>
             </div>
@@ -473,9 +473,9 @@
                 <div class="date-filter">
                  <label for="inputState" class="form-label">기간검색</label>
                 <div class="col-sm-12">
-                    <input type="date" class="form-control-date" id="startDate">
+                    <input type="date" class="form-control-date">
                   <span>~</span>
-                    <input type="date" class="form-control-date" id="endDate">
+                    <input type="date" class="form-control-date">
                   </div>
                   </div>
                   </div>
@@ -484,79 +484,6 @@
              </div>
              </div>
 <!-- 검색필터 끝 -->
-<!-- 게시판 시작 -->
-    <h5 class="card-title"></h5>
-              <!-- Table with stripped rows -->
-              <table class="table datatable">
-                <thead>
-                  <tr>
-                    <th scope="col">번호</th>
-                    <th scope="col">글제목</th>
-                    <th scope="col">글내용</th>
-                    <th scope="col">작성자</th>
-                    <th scope="col">작성일</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">6</th>
-                    <td><a href="${pageContext.request.contextPath }/community_detail.jsp" class="admin-alink-color">xx점 후기</a></td>
-                    <td>토미강사 추천 어쩌구 저쩌구 어쩌구 저쩌구</td>
-                    <td>김xx</td>
-                    <td>2016-05-25</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td><a href="#" class="admin-alink-color">ss점 후기</a></td>
-                    <td>ss강사 비추 가지마셈</td>
-                    <td>이ss</td>
-                    <td>2014-12-05</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td><a href="#" class="admin-alink-color">한달만에 10kg뺀 썰 푼다</a></td>
-                    <td>인스타 공구 어쩌구 저쩌구 효소가 어쩌구</td>
-                    <td>신00</td>
-                    <td>2011-08-12</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td><a href="#" class="admin-alink-color">너모 힘들다</a></td>
-                    <td>집가고 싶다아아아아아아아아아아</td>
-                    <td>구99</td>
-                    <td>2012-06-11</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td><a href="#" class="admin-alink-color">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</a></td>
-                    <td>ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ</td>
-                    <td>강22</td>
-                    <td>2011-04-19</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td><a href="#" class="admin-alink-color">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</a></td>
-                    <td>ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ</td>
-                    <td>강33</td>
-                    <td>2011-04-19</td>
-                  </tr>
-                </tbody>
-              </table>          	
-
-	 <!-- 페이징 처리 시작 -->
-              <div class="admin-screen-paging">
-                <ul class="pagination">
-                  <li class="page-item"><a class="page-link" href="#">이전</a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                  <li class="page-item"><a class="page-link" href="#">다음</a></li>
-                </ul>
-             </div>
-      <!-- 페이징 처리 끝 -->
-	
             </div>
           </div>
 
@@ -598,56 +525,6 @@
 
   <!-- Template Main JS File -->
   <script src="${pageContext.request.contextPath }/resources/admin/assets/js/main.js"></script>
- 
-  <!--내가 만든 JS File --> 
-  <script src="${pageContext.request.contextPath }/resources/js/common.js"></script>
- <!--  
- <script>
-//입력 필드 가져오기
- const startDateInput = document.getElementById('startDate');
- const endDateInput = document.getElementById('endDate');
-
- // 이벤트 리스너 추가
- startDateInput.addEventListener('input', () => {
-     restrictEndDate();
- });
-
- endDateInput.addEventListener('input', () => {
-     restrictEndDate();
- });
-
- function restrictEndDate() {
-     const startDate = new Date(startDateInput.value);
-     const endDate = new Date(endDateInput.value);
-
-     if (startDate > endDate) {
-    	 alert('시작 날짜는 종료 날짜보다 빨라야 합니다.');
-         // 현재 입력을 지우거나 기존 유효한 날짜를 복원할 수 있도록 처리
-         startDateInput.value = '';
-         endDateInput.value = '';
-     }
- }
- 
- // 검색 필터 초기화
- document.addEventListener('DOMContentLoaded', function() {
-  const inputState = document.getElementById('inputState');
-  const inputCity = document.getElementById('inputCity');
-  const startDate = document.getElementById('startDate');
-  const endDate = document.getElementById('endDate');
-
-  const resetButton = document.getElementById('resetButton');
-  resetButton.addEventListener('click', function() {
-    inputState.selectedIndex = 0;  // 선택 박스 초기화
-    inputCity.value = '';          // 검색어 입력 필드 초기화
-    startDate.value = '';          // 시작일 초기화
-    endDate.value = '';            // 종료일 초기화
-  });
-});
-</script>
---> 
- 
-
-
 
 </body>
 

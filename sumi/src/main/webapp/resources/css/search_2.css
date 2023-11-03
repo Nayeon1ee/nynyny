@@ -2,7 +2,7 @@
 
 .search-filter{
 	width: 100%;
-	height: 400px;
+	height: 300px;
 	border-radius: 2em;
     background: aliceblue;
     margin-top: 2%;
@@ -12,7 +12,7 @@
 }
 
 .search-filter-inner {
-    border: 2px solid red;
+   
     width: 80%;
     height: 100%;
 	
@@ -34,40 +34,42 @@
   border-radius: var(--bs-border-radius);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 	flex:1;
-	width:300px;
+	width:400px;
 }
 
 .search-date{
 	display:inline-flex;
-	border: 2px solid blue;
-	width: 400px;
 	
+	width: 830px;
+	margin-top: 20px;
 }
 
 
 .col-sm-12{
-	padding-top: 5.2%;
+
 	display:flex;
-	border: 2px solid green;
+	
 	width: ;
 }
 
 .col-md-3{
-	border: 2px solid red;
-	width: 20%;
+	
+	width: 200px;
+
 	
 }
 
 .col-md-6{
-	border: 2px solid purple;
-	width: 45%;
+
+	width: 430px;
 	flex:1;
 	display: inline-flex;
+	padding-top: 32px;
 }
 
 .serch-input{
 	flex:1;
-	padding-top: 2.7%;
+
 }
 
 .search-top{
@@ -77,11 +79,18 @@
 
 .search-btn{
 	flex:1;
-	border: 2px solid orange;
+	
 	display: inline-block;
+	
+		
 }
 
 .serch-filter-content{
-	border: 10px solid pink;
+	
+	width: 850px;
+	margin: 60px auto;
+}
 
+.btn.btn-primary.search{
+	width: 85px;
 }

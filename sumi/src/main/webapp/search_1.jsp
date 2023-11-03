@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/admin/assets/css/style.css">
 
 <!-- DIY css파일 -->
-  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/search.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/search_1.css">
   
   <!-- =======================================================
   * Template Name: NiceAdmin
@@ -450,32 +450,36 @@
      <div class="serch-filter-content">
       <div class="search-top">
               <div class="col-md-3">
-                  <label for="inputState" class="form-label">State</label>
+                  <label for="inputState" class="form-label">검색</label>
                   <select id="inputState" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
+                    <option selected disabled>전체</option>
+                    <option>글 제목</option>
+                    <option>글 작성자</option>
+                    <option></option>
                   </select>
                 </div>
            <div class="serch-input">
              <div class="col-md-6">
-                  <input type="text" class="form-control" id="inputCity">
+                  <input type="text" class="form-control" id="inputCity" placeholder="검색어를 입력해주세요">
                 </div>
                 <div class="search-btn">
-                <button type="button" class="btn btn-primary">Primary</button>
-                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="submit" class="btn btn-primary search">검색</button>
+                <button type="reset" class="btn btn-primary search">초기화</button>
            </div>
             </div>
             </div>
              
              <div class="search-date">
              <div class="col-md-3">
-                  <label for="inputState" class="form-label">State</label>
-                  <select id="inputState" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
+                  <label for="inputState" class="form-label">처리상태</label>
+                  <select id="inputState" class="form-select" >
+                    <option selected disabled>전체</option>
+                    <option>처리완료</option>
+                    <option>처리대기</option>
                   </select>
                 </div>
                 <div class="date-filter">
+                 <label for="inputState" class="form-label">기간검색</label>
                 <div class="col-sm-12">
                     <input type="date" class="form-control-date">
                   <span>~</span>

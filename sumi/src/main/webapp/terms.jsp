@@ -35,6 +35,7 @@
   <!-- 내가 만든 css -->
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/admin_common.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/terms.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/search_1.css">
   
   <!-- =======================================================
   * Template Name: NiceAdmin
@@ -443,40 +444,55 @@
             <div class="card-body">
               <h5 class="card-title">중제목 작성</h5>
               <p>간략한 설명</p>
-     <!-- 검색창 -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-<!-- 검색창 셀렉트 박스 -->
-<div>
-<select class="form-select" aria-label="Default select example" id="filterSelect">
-  <option selected>전체</option>
-  <option value="1">글제목</option>
-  <option value="2">글내용</option>
-  <option value="3">작성자</option>
-</select>
-
-	<!-- 검색어 입력창 -->
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="검색어를 입력해주세요." aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">search</button>
-      </form>
-      </div>
-      <a href="#" class="search-filter-reset" id="resetFilters">초기화</a>
-<!-- 날짜 검색창 -->
-<div class="search-date">
-<select class="form-select" aria-label="Default select example" id="filterSelect">
-  <option value="1" selected >작성일</option>
-  <option value="2">최근 수정일</option>
-</select>
-    <div class="date-input">
-        <input type="date" id="startDate">
-    </div>
-    <span class="date-divider">~</span>
-    <div class="date-input">
-        <input type="date" id="endDate">
-    </div>
-</div>	
-</nav>
-<!-- 검색창 끝 -->
+    <!-- 검색필터 시작 -->
+             <div class="search-filter">
+      <div class="search-filter-inner" >
+    
+     <div class="serch-filter-content">
+      <div class="search-top">
+              <div class="col-md-3">
+                  <label for="inputState" class="form-label">검색</label>
+                  <select id="inputState" class="form-select">
+                    <option selected disabled>전체</option>
+                    <option>약관명</option>
+                    <option>필수 여부</option>
+                    <option></option>
+                  </select>
+                </div>
+           <div class="serch-input">
+             <div class="col-md-6">
+                  <input type="text" class="form-control" id="inputCity" placeholder="검색어를 입력해주세요">
+                </div>
+                <div class="search-btn">
+                <button type="submit" class="btn btn-primary search">검색</button>
+                <button type="reset" class="btn btn-primary search">초기화</button>
+           </div>
+            </div>
+            </div>
+             
+             <div class="search-date">
+             <div class="col-md-3">
+                  <label for="inputState" class="form-label">기간검색</label>
+                  <select id="inputState" class="form-select" >
+                    <option selected disabled>전체</option>
+                    <option>등록일자</option>
+                    <option>최근 수정일자</option>
+                  </select>
+                </div>
+                <div class="date-filter">
+                 <label for="inputState" class="form-label">&nbsp;</label>
+                <div class="col-sm-12">
+                    <input type="date" class="form-control-date">
+                  <span>~</span>
+                    <input type="date" class="form-control-date">
+                  </div>
+                  </div>
+                  </div>
+                  
+                </div>
+             </div>
+             </div>
+<!-- 검색필터 끝 -->
 <div class="terms-btn">
 <span class="terms-reg-btn">
 <button type="button" class="btn btn-primary" onclick="location.href='${pageContext.request.contextPath }/terms_register.jsp'">약관등록</button>
@@ -486,7 +502,6 @@
 </span>
 </div>
 <!-- 게시판 시작 -->
-    <h5 class="card-title"></h5>
               <!-- Table with stripped rows -->
               <table class="table datatable">
                 <thead>
@@ -593,52 +608,8 @@
   <!-- Template Main JS File -->
   <script src="${pageContext.request.contextPath }/resources/admin/assets/js/main.js"></script>
 
-<!-- 검색창=>날짜 검색시 시작일보다 빠른 종료일을 선택 못하게 막는 js -->
-<script>
-//입력 필드 가져오기
-const startDateInput = document.getElementById('startDate');
-const endDateInput = document.getElementById('endDate');
-
-// 이벤트 리스너 추가
-startDateInput.addEventListener('input', () => {
-    restrictEndDate();
-});
-
-endDateInput.addEventListener('input', () => {
-    restrictEndDate();
-});
-
-function restrictEndDate() {
-    const startDate = new Date(startDateInput.value);
-    const endDate = new Date(endDateInput.value);
-
-    if (startDate > endDate) {
-        alert('시작 날짜는 종료 날짜보다 빨라야 합니다.');
-        // 현재 입력을 지우거나 기존 유효한 날짜를 복원할 수 있도록 처리
-        startDateInput.value = '';
-        endDateInput.value = '';
-    }
-}
-</script>
-
-<!-- 초기화 글자 클릭시 모든 검색필터 초기화 시키는 js -->
-<script>
-//초기화 링크를 클릭할 때 필터 초기화
-const resetFiltersLink = document.getElementById('resetFilters');
-resetFiltersLink.addEventListener('click', (e) => {
-    e.preventDefault(); // 기본 동작 (링크 이동) 방지
-    
-    // 필터 셀렉트 박스 초기화
-    document.getElementById('filterSelect').selectedIndex = 0;
-    
-    // 시작 날짜와 종료 날짜 초기화
-    document.getElementById('startDate').value = '';
-    document.getElementById('endDate').value = '';
-    
-    // 검색어 입력창 초기화
-    document.querySelector('input[type="search"]').value = '';
-});
-</script>
+  <!--내가 만든 JS File --> 
+  <script src="${pageContext.request.contextPath }/resources/js/common.js"></script>
 </body>
 
 </html>
