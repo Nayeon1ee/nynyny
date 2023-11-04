@@ -31,8 +31,8 @@
 
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/admin/assets/css/style.css">
-  
-  <!-- 내가 만든 css -->
+
+ <!-- 내가 만든 css -->
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/style_admin_common.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/style_common_2.css">
   
@@ -279,105 +279,96 @@
   <!-- ======= Sidebar ======= -->
   <aside id="sidebar" class="sidebar">
 
-    <ul class="sidebar-nav" id="sidebar-nav">
+       <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
         <a class="nav-link " href="index.html">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
-      </li><!-- End Dashboard Nav --> <!-- 통계 예정  -->
+      </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-person"></i><span>회원관리</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-person"></i><span>고객관리</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
             <a href="#">
-              <i class="bi bi-circle"></i><span>회원 목록 조회</span>
+              <i class="bi bi-circle"></i><span>회원관리</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <i class="bi bi-circle"></i><span>회원 수정</span>
+              <i class="bi bi-circle"></i><span>강사관리</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>센터관리</span>
             </a>
           </li>
         </ul>
-      </li><!-- End 회원관리 Nav -->
+      </li><!-- End 고객관리 Nav -->
+      
+     <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i>
+          <span>커뮤니티 관리</span>
+        </a>
+      </li><!-- End 커뮤니티 관리 Nav -->
+      
+     <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="bi bi-dash-circle"></i>
+          <span>신고글 관리</span>
+        </a>
+      </li><!-- End 신고글 관리 Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-journal-text"></i><span>강사관리</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-question-circle"></i><span>FAQ관리</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
             <a href="#">
-              <i class="bi bi-circle"></i><span>강사 목록 조회</span>
+              <i class="bi bi-circle"></i><span>전체 FAQ 목록 조회</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <i class="bi bi-circle"></i><span>강사 수정</span>
+              <i class="bi bi-circle"></i><span>FAQ 등록</span>
             </a>
           </li>
         </ul>
-      </li><!-- End 강사관리 Nav -->
+      </li><!-- End FAQ관리 Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-layout-text-window-reverse"></i><span>수업관리</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-shield-check"></i><span>이용약관및정책관리</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-           <li>
+          <li>
             <a href="#">
-              <i class="bi bi-circle"></i><span>전체 수업 일정 조회</span>
+              <i class="bi bi-circle"></i><span>전체 약관 목록 조회</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <i class="bi bi-circle"></i><span>수업 개설</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="bi bi-circle"></i><span>수업 삭제</span>
+              <i class="bi bi-circle"></i><span>약관 등록</span>
             </a>
           </li>
         </ul>
-      </li><!-- End 수업관리 Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-gem"></i><span>수강권관리</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="#">
-              <i class="bi bi-circle"></i><span>전체 수강권 목록 조회</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="bi bi-circle"></i><span>수강권 등록</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="bi bi-circle"></i><span>수강권 삭제</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End 수강권관리 Nav -->
+      </li><!-- End Tables Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-question-circle"></i><span>공지사항관리</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-exclamation-circle"></i><span>공지사항관리</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="/admin/noticeBoard" >
-              <i class="bi bi-circle"></i><span>전체 공지사항 조회</span>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>전체 공지사항 목록</span>
             </a>
           </li>
           <li>
@@ -386,11 +377,12 @@
             </a>
           </li>
         </ul>
-      </li><!-- End 공지사항관리 Nav -->
+      </li><!-- End Icons Nav -->
       
+
      <li class="nav-item">
         <a class="nav-link collapsed" href="#">
-          <i class="bi bi-card-list"></i>
+          <i class="bi bi-bell-fill"></i>
           <span>알림 발송이력 관리</span>
         </a>
       </li><!-- End 알림 발송이력 관리 Nav -->
@@ -417,7 +409,7 @@
           <span>Login</span>
         </a>
       </li><!-- End Login Page Nav -->
-
+      
     </ul>
 
   </aside><!-- End Sidebar-->
@@ -430,7 +422,7 @@
       <h1>커뮤니티 관리</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"></li><!-- 기존에는 현재 위치 표시였음 Depth1>Depth2>Depth3 표시 -->
+          <li class="breadcrumb-item">필요 시 작성</li><!-- 기존에는 현재 위치 표시였음 Depth1>Depth2>Depth3 표시 -->
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -441,9 +433,9 @@
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title"></h5>
-              <p></p>
-  <!-- 검색필터 시작 -->
+              <h5 class="card-title">중제목 작성</h5>
+              <p>간략한 설명</p>
+<!-- 검색필터 시작 -->
              <div class="search-filter">
       <div class="search-filter-inner" >
     
@@ -597,57 +589,10 @@
 
   <!-- Template Main JS File -->
   <script src="${pageContext.request.contextPath }/resources/admin/assets/js/main.js"></script>
- 
-  <!--내가 만든 JS File --> 
+
+<!--내가 만든 JS File --> 
   <script src="${pageContext.request.contextPath }/resources/js/common_2.js"></script>
- <!--  
- <script>
-//입력 필드 가져오기
- const startDateInput = document.getElementById('startDate');
- const endDateInput = document.getElementById('endDate');
-
- // 이벤트 리스너 추가
- startDateInput.addEventListener('input', () => {
-     restrictEndDate();
- });
-
- endDateInput.addEventListener('input', () => {
-     restrictEndDate();
- });
-
- function restrictEndDate() {
-     const startDate = new Date(startDateInput.value);
-     const endDate = new Date(endDateInput.value);
-
-     if (startDate > endDate) {
-    	 alert('시작 날짜는 종료 날짜보다 빨라야 합니다.');
-         // 현재 입력을 지우거나 기존 유효한 날짜를 복원할 수 있도록 처리
-         startDateInput.value = '';
-         endDateInput.value = '';
-     }
- }
- 
- // 검색 필터 초기화
- document.addEventListener('DOMContentLoaded', function() {
-  const inputState = document.getElementById('inputState');
-  const inputCity = document.getElementById('inputCity');
-  const startDate = document.getElementById('startDate');
-  const endDate = document.getElementById('endDate');
-
-  const resetButton = document.getElementById('resetButton');
-  resetButton.addEventListener('click', function() {
-    inputState.selectedIndex = 0;  // 선택 박스 초기화
-    inputCity.value = '';          // 검색어 입력 필드 초기화
-    startDate.value = '';          // 시작일 초기화
-    endDate.value = '';            // 종료일 초기화
-  });
-});
-</script>
---> 
- 
-
-
-
+  
 </body>
 
 </html>
