@@ -1,5 +1,5 @@
 /**
- * 검색 필터 값 초기화
+ * 날짜 선택시 시작일보다 빠른 종료일 막는 js
  */
 //입력 필드 가져오기
  const startDateInput = document.getElementById('startDate');
@@ -29,6 +29,7 @@
  /* 검색 필터 초기화*/
  document.addEventListener('DOMContentLoaded', function() {
   const inputState = document.getElementById('inputState');
+  const inputState2 = document.getElementById('inputState2');
   const inputCity = document.getElementById('inputCity');
   const startDate = document.getElementById('startDate');
   const endDate = document.getElementById('endDate');
@@ -36,6 +37,7 @@
   const resetButton = document.getElementById('resetButton');
   resetButton.addEventListener('click', function() {
     inputState.selectedIndex = 0;  // 선택 박스 초기화
+    inputState2.selectedIndex = 0;  // 선택 박스 초기화
     inputCity.value = '';          // 검색어 입력 필드 초기화
     startDate.value = '';          // 시작일 초기화
     endDate.value = '';            // 종료일 초기화

@@ -32,9 +32,10 @@
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/admin/assets/css/style.css">
 
+  
   <!-- 내가 만든 css -->
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/style_admin_common.css">
-  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/style_terms.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/style_baned_comment.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/style_common_1.css">
   
   <!-- =======================================================
@@ -428,7 +429,7 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>이용약관 관리</h1>
+      <h1>신고글 관리</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item">필요 시 작성</li><!-- 기존에는 현재 위치 표시였음 Depth1>Depth2>Depth3 표시 -->
@@ -444,7 +445,7 @@
             <div class="card-body">
               <h5 class="card-title">중제목 작성</h5>
               <p>간략한 설명</p>
-    <!-- 검색필터 시작 -->
+     <!-- 검색필터 시작 -->
              <div class="search-filter">
       <div class="search-filter-inner" >
     
@@ -454,8 +455,8 @@
                   <label for="inputState" class="form-label">검색</label>
                   <select id="inputState" class="form-select">
                     <option selected disabled>전체</option>
-                    <option>약관명</option>
-                    <option>필수 여부</option>
+                    <option>글 제목</option>
+                    <option>작성자</option>
                   </select>
                 </div>
            <div class="serch-input">
@@ -471,15 +472,15 @@
              
              <div class="search-date">
              <div class="col-md-3">
-                  <label for="inputState" class="form-label">기간검색</label>
+                  <label for="inputState" class="form-label">처리상태</label>
                   <select id="inputState2" class="form-select" >
                     <option selected disabled>전체</option>
-                    <option>등록일자</option>
-                    <option>최근 수정일자</option>
+                    <option>처리완료</option>
+                    <option>처리대기</option>
                   </select>
                 </div>
                 <div class="date-filter">
-                 <label for="inputState" class="form-label">&nbsp;</label>
+                 <label for="inputState" class="form-label">기간검색</label>
                 <div class="col-sm-12">
                     <input type="date" class="form-control-date" id="startDate">
                   <span>~</span>
@@ -492,61 +493,75 @@
              </div>
              </div>
 <!-- 검색필터 끝 -->
-<div class="terms-btn">
-<span class="terms-reg-btn">
-<button type="button" class="btn btn-primary" onclick="location.href='${pageContext.request.contextPath }/terms_register.jsp'">약관등록</button>
-</span>
-<span class="excel-down-btn">
-<button type="button" class="btn btn-success">엑셀다운</button>
-</span>
-</div>
 <!-- 게시판 시작 -->
+    <h5 class="card-title"></h5>
               <!-- Table with stripped rows -->
               <table class="table datatable">
                 <thead>
                   <tr>
                     <th scope="col">NO.</th>
-                    <th scope="col">약관명</th>
+                    <th scope="col">글제목</th>
+                    <th scope="col">작성자</th>
                     <th scope="col">작성일</th>
-                    <th scope="col">최근 수정일</th>
-                    <th scope="col">필수여부</th>
+                    <th scope="col">신고건수</th>
+                    <th scope="col">처리상태</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <th scope="row">5</th>
-                    <td><a href="${pageContext.request.contextPath }/terms_detail.jsp" class="admin-alink-color">서비스 이용약관</a></td>
-                    <td>2023-12-25</td>
-                    <td>2023-12-25</td>
-                    <td>필수</td>
+                    <td><a href="${pageContext.request.contextPath }/baned_comment_detail.jsp" class="admin-alink-color">xx점 후기</a></td>
+                    <td>홍길동</td>
+                    <td>2016-05-25</td>
+                    <td><span class="tooltip-baned-reason">3건
+                    	<span class="tooltip-baned-text"><p>신고사유</p>- 성희롱적 발언<br>- 스팸/홍보/도배글<br>- 개인정보 노출 게시물
+                    	</span></span>
+                    </td>
+                    <td>처리대기</td>
                   </tr>
                   <tr>
                     <th scope="row">4</th>
-                    <td><a href="#" class="admin-alink-color">개인정보 수집 및 이용방침</a></td>
-                    <td>2022-04-01</td>
-                    <td>2022-10-20</td>
-                    <td>필수</td>
+                    <td><a href="#" class="admin-alink-color">코인 어쩌구</a></td>
+                    <td>신00</td>
+                    <td>2011-08-12</td>
+                    <td><span class="tooltip-baned-reason">2건
+                    	<span class="tooltip-baned-text"><p>신고사유</p>- 성희롱적 발언<br>- 개인정보 노출 게시물
+                    	</span></span>
+                    </td>
+                    <td>처리완료</td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
-                    <td><a href="#" class="admin-alink-color">마케팅 수신동의</a></td>
-                    <td>2022-03-19</td>
-                    <td>2022-03-19</td>
-                    <td>선택</td>
+                    <td><a href="#" class="admin-alink-color">너모 힘들다</a></td>
+                    <td>신00</td>
+                    <td>2011-08-12</td>
+                    <td><span class="tooltip-baned-reason">1건
+                    	<span class="tooltip-baned-text"><p>신고사유</p>- 성희롱적 발언<br>
+                    	</span></span>
+                    </td>
+                    <td>처리완료</td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
-                    <td><a href="#" class="admin-alink-color">몰루</a></td>
-                    <td>2021-12-24</td>
-                    <td>2021-12-24</td>
-                    <td>선택</td>
+                    <td><a href="#" class="admin-alink-color">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</a></td>
+                   <td>신00</td>
+                    <td>2011-08-12</td>
+                    <td><span class="tooltip-baned-reason">3건
+                    	<span class="tooltip-baned-text"><p>신고사유</p>- 성희롱적 발언<br>- 스팸/홍보/도배글<br>- 개인정보 노출 게시물
+                    	</span></span>
+                    </td>
+                    <td>처리완료</td>
                   </tr>
                   <tr>
                     <th scope="row">1</th>
-                    <td><a href="#" class="admin-alink-color">어쩌구</a></td>
-                    <td>2020-03-12</td>
-                    <td>2020-03-12</td>
-                    <td>선택</td>
+                    <td><a href="#" class="admin-alink-color">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</a></td>
+                   <td>신00</td>
+                    <td>2011-08-12</td>
+                    <td><span class="tooltip-baned-reason">1건
+                    	<span class="tooltip-baned-text"><p>신고사유</p>- 스팸/홍보/도배글
+                    	</span></span>
+                    </td>
+                    <td>처리완료</td>
                   </tr>
                 </tbody>
               </table>          	
@@ -607,8 +622,11 @@
   <!-- Template Main JS File -->
   <script src="${pageContext.request.contextPath }/resources/admin/assets/js/main.js"></script>
 
-  <!--내가 만든 JS File --> 
+<!--내가 만든 JS File --> 
   <script src="${pageContext.request.contextPath }/resources/js/common_1.js"></script>
+
+
+
 </body>
 
 </html>

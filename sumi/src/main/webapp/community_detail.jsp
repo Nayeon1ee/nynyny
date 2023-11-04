@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/admin/assets/css/style.css">
 
 <!-- 내가 만든 css -->
-  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/admin_common.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/style_admin_common.css">
   
   <!-- =======================================================
   * Template Name: NiceAdmin
@@ -447,7 +447,7 @@
              	       <!-- Multi Columns Form -->
               <form class="row g-3">
               <div class="col-md-2">
-                  <label class="form-label">글번호</label>
+                  <label class="form-label">글 번호</label>
                   <input type="text" readonly disabled class="form-control" value="1">
                 </div>
                 <div class="col-md-5">

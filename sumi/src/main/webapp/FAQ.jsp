@@ -34,7 +34,7 @@
 
   <!-- 내가 만든 css -->
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/admin_common.css">
-  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/FAQ.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/style_FAQ.css">
   <!-- =======================================================
   * Template Name: NiceAdmin
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
@@ -467,7 +467,7 @@
               <table class="table datatable">
                 <thead>
                   <tr>
-                    <th scope="col">번호</th>
+                    <th scope="col">NO.</th>
                     <th scope="col">구분</th>
                     <th scope="col">제목</th>
                     <th scope="col">등록일</th>

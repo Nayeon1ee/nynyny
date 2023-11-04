@@ -33,9 +33,9 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/admin/assets/css/style.css">
 
   <!-- 내가 만든 css -->
-  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/style_admin_common.css">
-  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/style_terms.css">
-  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/style_common_1.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/admin_common.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/common_1.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/admin_memManage.css">
   
   <!-- =======================================================
   * Template Name: NiceAdmin
@@ -428,7 +428,7 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>이용약관 관리</h1>
+      <h1>회원 관리</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item">필요 시 작성</li><!-- 기존에는 현재 위치 표시였음 Depth1>Depth2>Depth3 표시 -->
@@ -454,8 +454,9 @@
                   <label for="inputState" class="form-label">검색</label>
                   <select id="inputState" class="form-select">
                     <option selected disabled>전체</option>
-                    <option>약관명</option>
-                    <option>필수 여부</option>
+                    <option>가입유형</option>
+                    <option>이름</option>
+                    <option>이메일 아이디</option>
                   </select>
                 </div>
            <div class="serch-input">
@@ -471,15 +472,15 @@
              
              <div class="search-date">
              <div class="col-md-3">
-                  <label for="inputState" class="form-label">기간검색</label>
+                  <label for="inputState" class="form-label">회원 상태</label>
                   <select id="inputState2" class="form-select" >
                     <option selected disabled>전체</option>
-                    <option>등록일자</option>
-                    <option>최근 수정일자</option>
+                    <option>일반회원</option>
+                    <option>탈퇴회원</option>
                   </select>
                 </div>
                 <div class="date-filter">
-                 <label for="inputState" class="form-label">&nbsp;</label>
+                 <label for="inputState" class="form-label">기간검색</label>
                 <div class="col-sm-12">
                     <input type="date" class="form-control-date" id="startDate">
                   <span>~</span>
@@ -492,10 +493,7 @@
              </div>
              </div>
 <!-- 검색필터 끝 -->
-<div class="terms-btn">
-<span class="terms-reg-btn">
-<button type="button" class="btn btn-primary" onclick="location.href='${pageContext.request.contextPath }/terms_register.jsp'">약관등록</button>
-</span>
+<div class="manage-excel-btn">
 <span class="excel-down-btn">
 <button type="button" class="btn btn-success">엑셀다운</button>
 </span>
@@ -506,47 +504,65 @@
                 <thead>
                   <tr>
                     <th scope="col">NO.</th>
-                    <th scope="col">약관명</th>
-                    <th scope="col">작성일</th>
-                    <th scope="col">최근 수정일</th>
-                    <th scope="col">필수여부</th>
+                    <th scope="col">가입유형</th>
+                    <th scope="col">이메일 아이디</th>
+                    <th scope="col">이름</th>
+                    <th scope="col">생년월일</th>
+                    <th scope="col">가입일자</th>
+                    <th scope="col">회원상태</th>
+                    <th scope="col">상세보기</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <th scope="row">5</th>
-                    <td><a href="${pageContext.request.contextPath }/terms_detail.jsp" class="admin-alink-color">서비스 이용약관</a></td>
+                    <td>카카오</td>
+                    <td>sa@naver.com</td>
+                    <td>사오정</td>
+                    <td>1968-12-25</td>
                     <td>2023-12-25</td>
-                    <td>2023-12-25</td>
-                    <td>필수</td>
+                    <td>탈퇴회원</td>
+                    <td><a href="${pageContext.request.contextPath }/admin_memManage_detail.jsp" class="memDetail">상세보기</a></td>
                   </tr>
-                  <tr>
+                 <tr>
                     <th scope="row">4</th>
-                    <td><a href="#" class="admin-alink-color">개인정보 수집 및 이용방침</a></td>
-                    <td>2022-04-01</td>
-                    <td>2022-10-20</td>
-                    <td>필수</td>
+                    <td>카카오</td>
+                    <td>sa@naver.com</td>
+                    <td>사오정</td>
+                    <td>1968-12-25</td>
+                    <td>2023-12-25</td>
+                    <td>탈퇴회원</td>
+                    <td><a href="${pageContext.request.contextPath }/admin_memManage_detail.jsp" >상세보기</a></td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
-                    <td><a href="#" class="admin-alink-color">마케팅 수신동의</a></td>
-                    <td>2022-03-19</td>
-                    <td>2022-03-19</td>
-                    <td>선택</td>
+                    <td>카카오</td>
+                    <td>sa@naver.com</td>
+                    <td>사오정</td>
+                    <td>1968-12-25</td>
+                    <td>2023-12-25</td>
+                    <td>탈퇴회원</td>
+                    <td><a href="${pageContext.request.contextPath }/admin_memManage_detail.jsp" >상세보기</a></td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
-                    <td><a href="#" class="admin-alink-color">몰루</a></td>
-                    <td>2021-12-24</td>
-                    <td>2021-12-24</td>
-                    <td>선택</td>
+                    <td>카카오</td>
+                    <td>sa@naver.com</td>
+                    <td>사오정</td>
+                    <td>1968-12-25</td>
+                    <td>2023-12-25</td>
+                    <td>탈퇴회원</td>
+                    <td><a href="${pageContext.request.contextPath }/admin_memManage_detail.jsp" >상세보기</a></td>
                   </tr>
                   <tr>
                     <th scope="row">1</th>
-                    <td><a href="#" class="admin-alink-color">어쩌구</a></td>
-                    <td>2020-03-12</td>
-                    <td>2020-03-12</td>
-                    <td>선택</td>
+                    <td>카카오</td>
+                    <td>sa@naver.com</td>
+                    <td>사오정</td>
+                    <td>1968-12-25</td>
+                    <td>2023-12-25</td>
+                    <td>탈퇴회원</td>
+                    <td><a href="${pageContext.request.contextPath }/admin_memManage_detail.jsp" >상세보기</a></td>
                   </tr>
                 </tbody>
               </table>          	

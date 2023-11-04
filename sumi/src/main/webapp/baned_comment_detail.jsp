@@ -33,8 +33,8 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/admin/assets/css/style.css">
 
 <!-- 내가 만든 css -->
-  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/admin_common.css">
-  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/baned_comment.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/style_admin_common.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/style_baned_comment.css">
   
   <!-- =======================================================
   * Template Name: NiceAdmin

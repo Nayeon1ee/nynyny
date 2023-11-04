@@ -33,8 +33,8 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/admin/assets/css/style.css">
   
   <!-- 내가 만든 css -->
-  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/admin_common.css">
-  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/search_2.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/style_admin_common.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/style_common_2.css">
   
   <!-- =======================================================
   * Template Name: NiceAdmin
@@ -455,7 +455,6 @@
                     <option selected disabled>전체</option>
                     <option>글 제목</option>
                     <option>글 작성자</option>
-                    <option></option>
                   </select>
                 </div>
            <div class="serch-input">
@@ -490,7 +489,7 @@
               <table class="table datatable">
                 <thead>
                   <tr>
-                    <th scope="col">번호</th>
+                    <th scope="col">NO.</th>
                     <th scope="col">글제목</th>
                     <th scope="col">글내용</th>
                     <th scope="col">작성자</th>
@@ -600,7 +599,7 @@
   <script src="${pageContext.request.contextPath }/resources/admin/assets/js/main.js"></script>
  
   <!--내가 만든 JS File --> 
-  <script src="${pageContext.request.contextPath }/resources/js/common.js"></script>
+  <script src="${pageContext.request.contextPath }/resources/js/common_2.js"></script>
  <!--  
  <script>
 //입력 필드 가져오기

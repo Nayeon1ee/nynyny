@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/admin/assets/css/style.css">
 
 <!-- DIY css파일 -->
-  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/search_1.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/style_common_1.css">
   
   <!-- =======================================================
   * Template Name: NiceAdmin
@@ -464,7 +464,7 @@
                 </div>
                 <div class="search-btn">
                 <button type="submit" class="btn btn-primary search">검색</button>
-                <button type="reset" class="btn btn-primary search">초기화</button>
+                <button type="reset" class="btn btn-primary search" id="resetButton">초기화</button>
            </div>
             </div>
             </div>
@@ -472,7 +472,7 @@
              <div class="search-date">
              <div class="col-md-3">
                   <label for="inputState" class="form-label">처리상태</label>
-                  <select id="inputState" class="form-select" >
+                  <select id="inputState2" class="form-select" >
                     <option selected disabled>전체</option>
                     <option>처리완료</option>
                     <option>처리대기</option>
@@ -481,9 +481,9 @@
                 <div class="date-filter">
                  <label for="inputState" class="form-label">기간검색</label>
                 <div class="col-sm-12">
-                    <input type="date" class="form-control-date">
+                    <input type="date" class="form-control-date" id="startDate">
                   <span>~</span>
-                    <input type="date" class="form-control-date">
+                    <input type="date" class="form-control-date" id="endDate">
                   </div>
                   </div>
                   </div>
